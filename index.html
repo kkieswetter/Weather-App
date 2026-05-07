@@ -3,51 +3,64 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="src/styles.css" />
     <title>Weather App</title>
   </head>
   <body>
     <div class="container">
-    <header>
-      <form class="search-form">
-        <input type="search" placeholder="Enter a city" required class="search-form-input"/>
-        <input type="submit" value="Search" class="search-form-button"/>
-      </form>
-    </header>
-    <main>
+      <header>
+        <form class="search-form" id="search-form">
+          <input
+            type="search"
+            placeholder="Enter a city"
+            required
+            id="search-form-input"
+            class="search-form-input"
+          />
+          <input type="submit" value="Search" class="search-form-button" />
+        </form>
+      </header>
+      <main>
         <div class="weather-data">
-      <div>
-        <h1 class="city">Paris</h1>
-        <p class="details">
-          Tuesday 14:49, scattered clouds<br />
-          Humidity: <strong>66%</strong>, Wind: <strong>3.13km/h</strong>
-        </p>
-      </div>
-      <div class="temperature">
-      <div class="temperature-icon">⛅</div>
-      <div class="temperature-value">12</div>
-      <div class="temperature-unit">°C</div>
-      </div>
-      </div>
-    </main>
+          <div>
+            <h1 class="city" id="city">Paris</h1>
+            <p class="details">
+              Tuesday 14:49, scattered clouds<br />
+              Humidity: <strong>66%</strong>, Wind: <strong>3.13km/h</strong>
+            </p>
+          </div>
+          <div class="temperature">
+            <div class="temperature-icon">⛅</div>
+            <div class="temperature-value">12</div>
+            <div class="temperature-unit">°C</div>
+          </div>
+        </div>
+      </main>
+
+      <footer>
+        This project was coded by
+        <a href="https://github.com/kkieswetter" target="_blank"
+          >Kelly Kieswetter</a
+        >
+        and is
+        <a href="https://github.com/kkieswetter/Weather-App.git" target="_blank"
+          >on GitHub</a
+        >
+        and
+        <a
+          href="https://kelly-shecodes-weather-app.netlify.app/"
+          target="_blank"
+          >hosted on Netlify</a
+        >
+      </footer>
+    </div>
+    <script src="src/index.js"></script>
   </body>
-  <footer>
-    This project was coded by
-    <a href="https://github.com/kkieswetter" target="_blank"
-      >Kelly Kieswetter</a
-    >
-    and is
-    <a href="https://github.com/kkieswetter/Weather-App.git" target="_blank"
-      >on GitHub</a
-    >
-    and
-    <a href="https://kelly-shecodes-weather-app.netlify.app/" target="_blank"
-      >hosted on Netlify</a
-    >
-  </footer>
-  </div>
 </html>
